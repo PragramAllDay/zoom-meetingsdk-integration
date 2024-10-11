@@ -10,8 +10,8 @@ const app = express();
 const PORT = 3000;
 
 // Zoom OAuth credentials
-const ZOOM_CLIENT_ID = '3hQFS3grRlCyXu6bvBkEsw'; // Replace with your Zoom Client ID
-const ZOOM_CLIENT_SECRET = 'nq5d4mepRMUaZj1vQpKFTdaJcTM3iGiX'; // Replace with your Zoom Client Secret
+const ZOOM_CLIENT_ID = process.env.ZOOM_CLIENT_ID; // Replace with your Zoom Client ID
+const ZOOM_CLIENT_SECRET = process.env.ZOOM_CLIENT_SECRET; // Replace with your Zoom Client Secret
 const REDIRECT_URI = 'http://localhost:5173'; // Must match your Zoom app's Redirect URI
 
 app.use(cors());

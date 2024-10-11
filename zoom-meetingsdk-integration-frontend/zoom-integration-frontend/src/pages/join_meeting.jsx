@@ -4,7 +4,7 @@ function MeetingApp() {
   const client = ZoomMtgEmbedded.createClient();
 
   const authEndpoint = 'http://localhost:3000/sdk_auth'; // http://localhost:4000
-  const sdkKey = '3hQFS3grRlCyXu6bvBkEsw';
+  const sdkKey = import.meta.env.VITE_ZOOM_CLIENT_ID;
   const meetingNumber = '83712671760';
   const passWord = 'yxBL9h';
   const role = 0;
